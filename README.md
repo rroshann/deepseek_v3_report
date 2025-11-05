@@ -273,16 +273,6 @@ This paper's impact is less about a single new idea and more about providing a p
 
 ---
 
-## Code Demonstration
-
-A conceptual Jupyter Notebook is included in the repository. It demonstrates the two core architectural ideas to meet the rubric's code requirement:
-
-1. **MLA vs. MHA Cache Savings**: A direct calculation showing the massive (50x+) memory savings of MLA's compressed cache ($O(n \cdot d_c)$) compared to a standard KV cache ($O(n \cdot d_{model})$).
-
-2. **Loss-Free Router Simulation**: A conceptual demo of the DeepSeekMoE router, showing how the non-differentiable bias $b_i$ is updated outside the gradient pass to balance expert load.
-
----
-
 ## Resource Links
 
 1. [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) - The paper being presented
