@@ -36,6 +36,8 @@ DeepSeek-V3 solves this with a holistic co-design across different areas:
 
 - **SOTA Performance**: DeepSeek-V3 is the top-performing open-source model, achieving performance comparable to leading closed-source models like GPT-4o and Claude 3.5 Sonnet.
 
+![Figure 1](images/figure1.png)
+
 - **Unmatched Efficiency**: The entire training process was completed in only 2.788M H800 GPU hours, with remarkable stability and no loss spikes.
 
 ---
@@ -239,8 +241,6 @@ The router achieves this using a decoupled, non-gradient mechanism:
 ### Strengths
 
 **SOTA Performance**: The model decisively outperforms all other open-source models, especially in complex reasoning, math, and code. It's the first open model to be truly comparable to closed-source leaders like GPT-4o and Claude 3.5.
-
-![Figure 1](images/figure1.png)
 
 
 **Incredible Training Efficiency**: The entire model was trained for only 2.788M H800 GPU hours. This is a new blueprint for economical SOTA, proving that holistic co-design can be more effective than just brute-force compute. The training was also remarkably stable, with no irrecoverable loss spikes.
