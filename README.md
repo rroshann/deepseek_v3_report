@@ -19,7 +19,6 @@ The foundation for models like DeepSeek-V3 is the Transformer architecture, whic
 
 - **Training Cost**: "Dense" models, which use every parameter for every token, are prohibitively expensive to train at the scale of hundreds of billions of parameters.
 
-A common solution is the Mixture-of-Experts (MoE) architecture, but this introduces its own problem: it requires an "auxiliary loss" to keep the expert load balanced, which often hurts the model's final performance.
 
 ### Problem Statement
 How can we build a state-of-the-art, trillion-parameter-scale model that is cheap to train, fast for long-context inference, and avoids the performance trade-off of traditional MoE models?
