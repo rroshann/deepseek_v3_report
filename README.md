@@ -26,13 +26,11 @@ How can we build a state-of-the-art, trillion-parameter-scale model that is chea
 
 ### Approach (DeepSeek-V3)
 
-DeepSeek-V3 solves this with a holistic co-design across three areas:
+DeepSeek-V3 solves this with a holistic co-design across different areas:
 
 1. **Architecture**: It uses Multi-head Latent Attention (MLA) to compress the KV cache for efficient 128K context and DeepSeekMoE for sparse, cost-effective training.
 
 2. **Training**: It pioneers an auxiliary-loss-free load balancing strategy that eliminates the MoE performance trade-off. It also uses Multi-Token Prediction (MTP) to get a denser training signal and accelerate inference.
-
-3. **Systems**: The entire model is trained using FP8 precision and a custom DualPipe algorithm that overlaps computation and communication, hiding the MoE routing overhead.
 
 ### Key Results
 
